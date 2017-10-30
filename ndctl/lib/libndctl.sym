@@ -289,6 +289,7 @@ global:
 	ndctl_bus_is_nfit_cmd_supported;
 	ndctl_bus_wait_for_scrub_completion;
 	ndctl_bus_get_scrub_count;
+	ndctl_bus_has_error_injection;
 	ndctl_dimm_read_labels;
 	ndctl_dimm_validate_labels;
 	ndctl_dimm_init_labels;
@@ -296,6 +297,13 @@ global:
 	ndctl_mapping_get_position;
 	ndctl_namespace_set_enforce_mode;
 	ndctl_namespace_get_enforce_mode;
+	ndctl_namespace_inject_error;
+	ndctl_namespace_uninject_error;
+	ndctl_namespace_injection_status;
+	ndctl_namespace_injection_get_first_bb;
+	ndctl_namespace_injection_get_next_bb;
+	ndctl_bb_get_block;
+	ndctl_bb_get_count;
 } LIBNDCTL_3;
 
 LIBNDCTL_14 {
